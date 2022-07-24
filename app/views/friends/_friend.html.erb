@@ -4,5 +4,5 @@
   <td><%= friend.email %></td>
   <td><%= friend.phone %></td>
   <td><%= friend.twitter %></td>
-  <td><%= link_to "View", friend %></td>
+  <td><%= link_to "View", friend %> | <%= link_to "Edit", edit_friend_path(friend) %> | <%= link_to "Delete", friend, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></td>
 </tr>
